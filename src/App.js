@@ -33,6 +33,8 @@ const imageHats = [];
 addItem(28, imageHats, "component/character/accessories/hats");
 
 function App() {
+  // Trước khi truyền local storage vào phải kiểm tra trong server có local storage không. Trước khi truyền 1 biến hay dữ liệu nào cũng vậy
+  // cũng nên check trước khi truyền dữ liệu vào.
   const [imageBodyState, setImageBodyState] = useState({
     img: window.localStorage.getItem("imageBodyState")
       ? JSON.parse(window.localStorage.getItem("imageBodyState")).img
