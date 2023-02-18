@@ -34,45 +34,77 @@ addItem(28, imageHats, "component/character/accessories/hats");
 
 function App() {
   const [imageBodyState, setImageBodyState] = useState({
-    img: JSON.parse(window.localStorage.getItem("imageBodyState")).img || "",
-    id: JSON.parse(window.localStorage.getItem("imageBodyState")).id || "",
+    img: window.localStorage.getItem("imageBodyState")
+      ? JSON.parse(window.localStorage.getItem("imageBodyState")).img
+      : "",
+    id: window.localStorage.getItem("imageBodyState")
+      ? JSON.parse(window.localStorage.getItem("imageBodyState")).id
+      : "",
   });
 
   const [imageClothing1State, setImageClothing1State] = useState({
-    img:
-      JSON.parse(window.localStorage.getItem("imageClothing1State")).img || "",
-    id: JSON.parse(window.localStorage.getItem("imageClothing1State")).id || "",
+    img: window.localStorage.getItem("imageClothing1State")
+      ? JSON.parse(window.localStorage.getItem("imageClothing1State")).img
+      : "",
+    id: window.localStorage.getItem("imageClothing1State")
+      ? JSON.parse(window.localStorage.getItem("imageClothing1State")).id
+      : "",
   });
   const [imageClothing2State, setImageClothing2State] = useState({
-    img:
-      JSON.parse(window.localStorage.getItem("imageClothing2State")).img || "",
-    id: JSON.parse(window.localStorage.getItem("imageClothing2State")).id || "",
+    img: window.localStorage.getItem("imageClothing2State")
+      ? JSON.parse(window.localStorage.getItem("imageClothing2State")).img
+      : "",
+    id: window.localStorage.getItem("imageClothing2State")
+      ? JSON.parse(window.localStorage.getItem("imageClothing2State")).id
+      : "",
   });
   const [imageClothing3State, setImageClothing3State] = useState({
-    img:
-      JSON.parse(window.localStorage.getItem("imageClothing3State")).img || "",
-    id: JSON.parse(window.localStorage.getItem("imageClothing3State")).id || "",
+    img: window.localStorage.getItem("imageClothing3State")
+      ? JSON.parse(window.localStorage.getItem("imageClothing3State")).img
+      : "",
+    id: window.localStorage.getItem("imageClothing3State")
+      ? JSON.parse(window.localStorage.getItem("imageClothing3State")).id
+      : "",
   });
   const [imageMouthState, setImageMouthState] = useState({
-    img: JSON.parse(window.localStorage.getItem("imageMouthState")).img || "",
-    id: JSON.parse(window.localStorage.getItem("imageMouthState")).id || "",
+    img: window.localStorage.getItem("imageMouthState")
+      ? JSON.parse(window.localStorage.getItem("imageMouthState")).img
+      : "",
+    id: window.localStorage.getItem("imageMouthState")
+      ? JSON.parse(window.localStorage.getItem("imageMouthState")).id
+      : "",
   });
   const [imageEyesState, setImageEyesState] = useState({
-    img: JSON.parse(window.localStorage.getItem("imageEyesState")).img || "",
-    id: JSON.parse(window.localStorage.getItem("imageEyesState")).id || "",
+    img: window.localStorage.getItem("imageEyesState")
+      ? JSON.parse(window.localStorage.getItem("imageEyesState")).img
+      : "",
+    id: window.localStorage.getItem("imageEyesState")
+      ? JSON.parse(window.localStorage.getItem("imageEyesState")).id
+      : "",
   });
   const [imageGlassesState, setImageGlassesState] = useState({
-    img: JSON.parse(window.localStorage.getItem("imageGlassesState")).img || "",
-    id: JSON.parse(window.localStorage.getItem("imageGlassesState")).id || "",
+    img: window.localStorage.getItem("imageGlassesState")
+      ? JSON.parse(window.localStorage.getItem("imageGlassesState")).img
+      : "",
+    id: window.localStorage.getItem("imageGlassesState")
+      ? JSON.parse(window.localStorage.getItem("imageGlassesState")).id
+      : "",
   });
   const [imageEyeBrowsState, setImageEyeBrowsState] = useState({
-    img:
-      JSON.parse(window.localStorage.getItem("imageEyeBrowsState")).img || "",
-    id: JSON.parse(window.localStorage.getItem("imageEyeBrowsState")).id || "",
+    img: window.localStorage.getItem("imageEyeBrowsState")
+      ? JSON.parse(window.localStorage.getItem("imageEyeBrowsState")).img
+      : "",
+    id: window.localStorage.getItem("imageEyeBrowsState")
+      ? JSON.parse(window.localStorage.getItem("imageEyeBrowsState")).id
+      : "",
   });
   const [imageHairState, setImageHairState] = useState({
-    img: JSON.parse(window.localStorage.getItem("imageHairState")).img || "",
-    id: JSON.parse(window.localStorage.getItem("imageHairState")).id || "",
+    img: window.localStorage.getItem("imageHairState")
+      ? JSON.parse(window.localStorage.getItem("imageHairState")).img
+      : "",
+    id: window.localStorage.getItem("imageHairState")
+      ? JSON.parse(window.localStorage.getItem("imageHairState")).id
+      : "",
   });
   // const [imageHatsState, setImageHatsState] = useState({
   //   img: JSON.parse(window.localStorage.getItem("imageHatsState")).img,
