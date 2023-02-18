@@ -2,16 +2,6 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import RenderImage from "./component/RenderImage";
 import RenderAvatar from "./component/RenderAvatar";
-import "./component/character/body";
-import "./component/character/clothes/layer_1";
-import "./component/character/clothes/layer_2";
-import "./component/character/clothes/layer_3";
-import "./component/character/eyes";
-import "./component/character/eyebrows";
-import "./component/character/accessories/glasses";
-import "./component/character/hair";
-import "./component/character/mouths";
-import "./component/character/accessories/hats";
 const addItem = (total, imageName, path) => {
   for (let i = 1; i < total; i++) {
     const objectImage = {
@@ -217,7 +207,6 @@ function App() {
                 className={"body-state"}
               />
               {/* Mai code tiếp chỗ này */}
-
               <RenderAvatar
                 imageItemState={imageClothing1State}
                 zIndex={1}
@@ -238,14 +227,14 @@ function App() {
                 zIndex={2}
                 className={"mouth-state"}
               />
-              {this.props.user && (
-                <img
-                  src={require(`./component/character/noses/1.png`)}
-                  alt=""
-                  style={{ zIndex: "2" }}
-                  className="nose"
-                />
-              )}
+
+              <img
+                src={require(`./component/character/noses/1.png`)}
+                alt=""
+                style={{ zIndex: "2" }}
+                className="nose"
+              />
+
               <RenderAvatar
                 imageItemState={imageEyesState}
                 zIndex={2}
@@ -266,7 +255,6 @@ function App() {
                 zIndex={7}
                 className={"hats-state"}
               /> */}
-
               <RenderAvatar
                 imageItemState={imageHairState}
                 zIndex={6}
