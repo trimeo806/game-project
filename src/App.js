@@ -36,7 +36,7 @@ function App() {
   const [imageBodyState, setImageBodyState] = useState({
     img: window.localStorage.getItem("imageBodyState")
       ? JSON.parse(window.localStorage.getItem("imageBodyState")).img
-      : "",
+      : imageBody[getRandomInt(17)].img,
     id: window.localStorage.getItem("imageBodyState")
       ? JSON.parse(window.localStorage.getItem("imageBodyState")).id
       : "",
@@ -45,7 +45,7 @@ function App() {
   const [imageClothing1State, setImageClothing1State] = useState({
     img: window.localStorage.getItem("imageClothing1State")
       ? JSON.parse(window.localStorage.getItem("imageClothing1State")).img
-      : "",
+      : imageClothing1[getRandomInt(4)].img,
     id: window.localStorage.getItem("imageClothing1State")
       ? JSON.parse(window.localStorage.getItem("imageClothing1State")).id
       : "",
@@ -53,7 +53,7 @@ function App() {
   const [imageClothing2State, setImageClothing2State] = useState({
     img: window.localStorage.getItem("imageClothing2State")
       ? JSON.parse(window.localStorage.getItem("imageClothing2State")).img
-      : "",
+      : imageClothing2[getRandomInt(4)].img,
     id: window.localStorage.getItem("imageClothing2State")
       ? JSON.parse(window.localStorage.getItem("imageClothing2State")).id
       : "",
@@ -61,7 +61,7 @@ function App() {
   const [imageClothing3State, setImageClothing3State] = useState({
     img: window.localStorage.getItem("imageClothing3State")
       ? JSON.parse(window.localStorage.getItem("imageClothing3State")).img
-      : "",
+      : imageClothing3[getRandomInt(8)].img,
     id: window.localStorage.getItem("imageClothing3State")
       ? JSON.parse(window.localStorage.getItem("imageClothing3State")).id
       : "",
@@ -69,7 +69,7 @@ function App() {
   const [imageMouthState, setImageMouthState] = useState({
     img: window.localStorage.getItem("imageMouthState")
       ? JSON.parse(window.localStorage.getItem("imageMouthState")).img
-      : "",
+      : imageMouth[getRandomInt(23)].img,
     id: window.localStorage.getItem("imageMouthState")
       ? JSON.parse(window.localStorage.getItem("imageMouthState")).id
       : "",
@@ -77,7 +77,7 @@ function App() {
   const [imageEyesState, setImageEyesState] = useState({
     img: window.localStorage.getItem("imageEyesState")
       ? JSON.parse(window.localStorage.getItem("imageEyesState")).img
-      : "",
+      : imageEyes[getRandomInt(23)].img,
     id: window.localStorage.getItem("imageEyesState")
       ? JSON.parse(window.localStorage.getItem("imageEyesState")).id
       : "",
@@ -85,7 +85,7 @@ function App() {
   const [imageGlassesState, setImageGlassesState] = useState({
     img: window.localStorage.getItem("imageGlassesState")
       ? JSON.parse(window.localStorage.getItem("imageGlassesState")).img
-      : "",
+      : imageGlasses[getRandomInt(16)].img,
     id: window.localStorage.getItem("imageGlassesState")
       ? JSON.parse(window.localStorage.getItem("imageGlassesState")).id
       : "",
@@ -93,7 +93,7 @@ function App() {
   const [imageEyeBrowsState, setImageEyeBrowsState] = useState({
     img: window.localStorage.getItem("imageEyeBrowsState")
       ? JSON.parse(window.localStorage.getItem("imageEyeBrowsState")).img
-      : "",
+      : imageEyeBrows[getRandomInt(14)].img,
     id: window.localStorage.getItem("imageEyeBrowsState")
       ? JSON.parse(window.localStorage.getItem("imageEyeBrowsState")).id
       : "",
@@ -101,7 +101,7 @@ function App() {
   const [imageHairState, setImageHairState] = useState({
     img: window.localStorage.getItem("imageHairState")
       ? JSON.parse(window.localStorage.getItem("imageHairState")).img
-      : "",
+      : imageHair[getRandomInt(72)].img,
     id: window.localStorage.getItem("imageHairState")
       ? JSON.parse(window.localStorage.getItem("imageHairState")).id
       : "",
