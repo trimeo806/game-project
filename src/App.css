@@ -1,0 +1,149 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.div {
+  display: block;
+}
+.divider {
+  border-bottom: 4px solid rgba(255, 41, 41, 0.555);
+  height: 1px;
+  margin: 20px auto;
+  width: 50%;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://character-customization.netlify.app/static/media/hip-square.22f03fab06033dc3aca1.png);
+}
+.title,
+.subtitle {
+  text-align: center;
+}
+.title {
+  color: #0baf94;
+  font-size: 50px;
+  font-weight: 700;
+  text-shadow: 3px 3px #f90;
+}
+.subtitle {
+  color: #f90;
+  font-size: 30px;
+  font-weight: 900;
+  text-shadow: 3px 3px #0baf94;
+}
+.clickable {
+  display: flex;
+  position: relative;
+  width: 45px;
+  height: 45px;
+}
+.item {
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.151);
+  height: 50px;
+  /* overflow dung de hide di cac phan anh bi du thua ra khoi border */
+  overflow: hidden;
+  position: relative;
+  width: 50px;
+}
+.clickable img {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  border-radius: 50%;
+}
+.list {
+  background-color: rgba(255, 166, 0, 0.4);
+  border: 5px solid orange;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 10px 0px;
+  padding: 20px 20px 30px 20px;
+}
+.list-section {
+  max-width: 700px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.clickable:hover {
+  background-color: hsla(9, 100%, 73%, 0.315);
+}
+.button {
+  background-color: #ca5119;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  margin: 0 10px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.button:hover {
+  transition-duration: 0.2s;
+}
+.avatar-wrapper {
+  background-color: #fff;
+  border: 15px solid #0baf94;
+  border-radius: 40px;
+  display: inline-block;
+  padding: 50px;
+  /* position: -webkit-sticky; */
+  position: sticky;
+  top: calc(50% - 205px);
+  /* position: relative; */
+}
+.avatar {
+  position: relative;
+  height: 280px;
+  width: 260px;
+}
+.avatar img {
+  width: 260px;
+  z-index: 0;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.text-center {
+  text-align: center;
+}
+.button-randomize {
+  display: flex;
+  justify-content: center;
+}
+.avatar-group {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.hats-state {
+  overflow: hidden;
+}
+@media only screen and (max-width: 700px) {
+  .avatar {
+    position: relative;
+    height: 220px;
+    width: 200px;
+  }
+  .avatar img {
+    width: 200px;
+  }
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 10px;
+    padding: 20px;
+  }
+}
